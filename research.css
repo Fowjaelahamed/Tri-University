@@ -1,0 +1,45 @@
+.logo-img {
+    width: 60%;
+    margin-left: 70px;
+}
+.mind-mapping-img {
+    width: 58px;
+    margin-right: 70px;
+}
+.research-menu {
+    background-color: #1b8f7a;
+}
+.nav-link {
+    color: white;
+}
+.nav-link:hover {
+    color: #F7FF93;
+}
+.fa-solid {
+    color: white;
+    text-align: center;
+}
+.img-slider {
+    padding: 2px;
+    border: 3px solid #E9EFC0;
+}
+.cards{
+    margin: 2px;
+    padding: 5px;
+    color: white;
+    border: 2px solid none;
+    box-shadow: 2px 2px 2px #000000, -1px -1px 2px #000000;
+    background-color: #1b8f7a;
+    text-transform: capitalize;
+}
+ul{
+    padding: 0;
+}
+li{
+    margin: 15px ;
+    list-style: none;
+}
+hr{
+    width: 90%;
+    margin: 8px auto;
+}
