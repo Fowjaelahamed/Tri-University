@@ -42,6 +42,19 @@ body {
   padding-right: 60px;
   color: black;
 }
+#map {
+  height: 300px;
+  width: 40%;
+}
+#contentString {
+  color: black;
+  display: inline-block;
+}
+.bengal {
+  width: 30px;
+  display: inline-block;
+  padding-right: 5px;
+}
 #fb {
   background-color: #4267B2;
 }
