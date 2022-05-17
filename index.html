@@ -90,7 +90,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-4">
-                                        <a class="nav-link text-warning" href="">Admission Information</a>
+                                        <a class="nav-link text-warning" href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Admission Information</a>
                                         <a class="nav-link text-dark" href="undergraduate.html">UnderGraduate Programs</a>
                                         <a class="nav-link text-dark" href="">Graduate Programs</a>
                                     </div>
@@ -233,6 +233,34 @@
                     </li>
                 </ul>
             </div> <!-- navbar-collapse.// -->
+            <!-- modal for admission information -->
+            <div class="modal fade" id="staticBackdrop"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header text-center">
+                      <h5 class="modal-title w-100 fw-bold" id="staticBackdropLabel">Write to Us</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingName" placeholder="Your Name">
+                            <label for="floatingName"><i class="fas fa-user prefix grey-text"></i> Your Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                            <label for="floatingEmail"><i class="fas fa-envelope prefix grey-text"></i> Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingEmail" placeholder="Your Password">
+                            <label for="floatingEmail"><i class="fas fa-lock prefix grey-text"></i> Your password</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button type="button" class="btn w-50 btn-success">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div> <!-- container-fluid.// -->
     </nav>
     <!-- menu bar //  -->
@@ -338,9 +366,8 @@
     <!-- footer -->
     <footer class="container-fluid py-5 bg-dark text-light">
         <div class="container py-4  d-md-flex justify-content-md-around">
-            <div id="map">
-                
-            </div>
+            <!-- add map -->
+            <div id="map"></div>
             <div>
                 <h5>Contact</h5>
                 <ul class="list-unstyled text-small">
