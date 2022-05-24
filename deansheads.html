@@ -76,8 +76,7 @@
     <!-- menu bar  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="logo/logo/logo.png" alt=""
-                    width="150px"></a>
+            <a class="navbar-brand" href="index.html"><img src="logo/logo/logo.png" alt="" width="150px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -90,8 +89,10 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-4">
-                                        <a class="nav-link text-warning" href="">Admission Information</a>
-                                        <a class="nav-link text-dark" href="undergraduate.html">UnderGraduate Programs</a>
+                                        <a class="nav-link text-warning" href="" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">Admission Information</a>
+                                        <a class="nav-link text-dark" href="undergraduate.html">UnderGraduate
+                                            Programs</a>
                                         <a class="nav-link text-dark" href="">Graduate Programs</a>
                                     </div>
                                     <div class="col-4">
@@ -116,7 +117,7 @@
                                 <div class="row">
                                     <div class="col">
                                         <a class="nav-link text-warning" href="">Academic</a>
-                                        <a class="nav-link text-dark" href="">Academic Programs</a>
+                                        <a class="nav-link text-dark" href="academic.html">Academic Programs</a>
                                         <a class="nav-link text-dark" href="">Academic Calendar</a>
                                     </div>
                                     <div class="col">
@@ -155,7 +156,8 @@
                     </li>
                     <!-- International -->
                     <li class="nav-item dropdown has-megamenu">
-                        <a class="nav-link text-dark dropdown-toggle" href="#" data-bs-toggle="dropdown">International</a>
+                        <a class="nav-link text-dark dropdown-toggle" href="#"
+                            data-bs-toggle="dropdown">International</a>
                         <div class="dropdown-menu megamenu container w-50" role="menu">
                             <div class="container">
                                 <div class="row">
@@ -213,19 +215,28 @@
                             <div class="container">
                                 <div class="row row-cols-3 ms-auto">
                                     <div class="col">
-                                        <a class="nav-link text-dark" href=""><i class="fa-solid fa-book-open"></i><br>Library</a>
-                                        <a class="nav-link text-dark" href=""><i class="fa-solid fa-bell"></i><br>Notice</a>
-                                        <a class="nav-link text-dark" href=""><i class="fa-solid fa-language"></i><br>DIL</a>
+                                        <a class="nav-link text-dark" href=""><i
+                                                class="fa-solid fa-book-open"></i><br>Library</a>
+                                        <a class="nav-link text-dark" href=""><i
+                                                class="fa-solid fa-bell"></i><br>Notice</a>
+                                        <a class="nav-link text-dark" href=""><i
+                                                class="fa-solid fa-language"></i><br>DIL</a>
                                     </div>
                                     <div class="col">
-                                        <a class="nav-link text-dark" href=""><i class="fa-solid fa-bell"></i><br>Notice</a>
-                                        <a class="nav-link text-dark" href=""><i class="fa-solid fa-language"></i><br>DIL</a>
-                                        <a class="nav-link text-dark" href=""><i class="fa-solid fa-hand-holding"></i><br>IQAC</a>
+                                        <a class="nav-link text-dark" href=""><i
+                                                class="fa-solid fa-bell"></i><br>Notice</a>
+                                        <a class="nav-link text-dark" href=""><i
+                                                class="fa-solid fa-language"></i><br>DIL</a>
+                                        <a class="nav-link text-dark" href=""><i
+                                                class="fa-solid fa-hand-holding"></i><br>IQAC</a>
                                     </div>
                                     <div class="col">
-                                        <a class="nav-link text-dark" href=""><i class="fa-solid fa-bell"></i><br>Notice</a>
-                                        <a class="nav-link text-dark" href=""><i class="fa-solid fa-language"></i><br>DIL</a>
-                                        <a class="nav-link text-dark" href=""><i class="fa-solid fa-book-open"></i><br>Library</a>
+                                        <a class="nav-link text-dark" href=""><i
+                                                class="fa-solid fa-bell"></i><br>Notice</a>
+                                        <a class="nav-link text-dark" href=""><i
+                                                class="fa-solid fa-language"></i><br>DIL</a>
+                                        <a class="nav-link text-dark" href=""><i
+                                                class="fa-solid fa-book-open"></i><br>Library</a>
                                     </div>
                                 </div>
                             </div>
@@ -233,6 +244,39 @@
                     </li>
                 </ul>
             </div> <!-- navbar-collapse.// -->
+            <!-- modal for admission information -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h5 class="modal-title w-100 fw-bold" id="staticBackdropLabel">Write to Us</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingName" placeholder="Your Name">
+                                <label for="floatingName"><i class="fas fa-user prefix grey-text"></i> Your Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingEmail"
+                                    placeholder="name@example.com">
+                                <label for="floatingEmail"><i class="fas fa-envelope prefix grey-text"></i> Email
+                                    address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingEmail"
+                                    placeholder="Your Password">
+                                <label for="floatingEmail"><i class="fas fa-lock prefix grey-text"></i> Your
+                                    password</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="button" class="btn w-50 btn-success">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div> <!-- container-fluid.// -->
     </nav>
     <!-- breadcrumb  -->

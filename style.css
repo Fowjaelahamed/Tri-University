@@ -32,6 +32,22 @@ body {
   background-color: #1b8f7a;
   text-decoration-color: white;
 }
+.collapseheader {
+  margin: 0px;
+  height: 3rem;
+  text-align: center;
+  padding-top: 0.3rem;
+  background-color: #1b8f7a;
+  color: white;
+}
+.vr{
+  height: 1.5rem;
+  align-self: center;
+  opacity: 0.20;
+}
+.displaynone {
+  display: none;
+}
 .fa-brands  {
   color: white;
 }
@@ -42,9 +58,13 @@ body {
   padding-right: 60px;
   color: black;
 }
+.map-container{
+  width: 30%;
+  margin-right: 1rem;
+}
 #map {
   height: 300px;
-  width: 40%;
+  width: 100%;
 }
 #contentString {
   color: black;

@@ -285,12 +285,13 @@
         <div class="overlay">
             <div class="p-4 container-fluid d-flex justify-content-center">
                 <div>
-                    <h1 class="text-white mx-auto">STUDENTS</h1>
+                    <h1 class="text-white mx-auto">Academic Programs</h1>
                     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item lead"><a href="index.html" class="text-white">Home</a></li>
-                            <li class="breadcrumb-item lead"><a href="#" class="text-white">Students</a></li>
-                            <li class="breadcrumb-item lead text-white">Details</li>
+                            <li class="breadcrumb-item lead"><a href="academic.html" class="text-white">Academic
+                                    Programs</a></li>
+                            <li class="breadcrumb-item lead"><a href="#" class="text-white">Details</a></li>
                         </ol>
                     </nav>
                 </div>
@@ -300,28 +301,315 @@
     <!-- breadcrumb // -->
     <!-- main body  -->
     <section class="container my-3">
-        <div class="row g-2 mb-4 justify-content-center">
-            <div class="col-3 text-center"><button type="button" class="btn w-100 p-2 btnclr text-white"
-                    onclick="location.href = 'student-login.html'">Student
-                    Portal</button></div>
-            <div class="col-3 text-center"><button type="button" class="btn w-100 p-2 btnclr text-white">Blended
-                    Learning Center</button></div>
-            <div class="col-3 text-center"><button type="button" class="btn w-100 p-2 btnclr text-white">Notice
-                    Board</button></div>
-            <div class="col-3 text-center"><button type="button" class="btn w-100 p-2 btnclr text-white">Acamedic
-                    Calender</button></div>
-            <div class="col-3 text-center"><button type="button"
-                    class="btn w-100 p-2 btnclr text-white">Library</button></div>
-            <div class="col-3 text-center"><button type="button" class="btn w-100 p-2 btnclr text-white">Coordination
-                    Officer</button></div>
-            <div class="col-3 text-center"><button type="button"
-                    class="btn w-100 p-2 btnclr text-white">Scholarship</button></div>
-            <div class="col-3 text-center"><button type="button" class="btn w-100 p-2 btnclr text-white">Talent
-                    Hunt</button></div>
-            <div class="col-3 text-center"><button type="button" class="btn w-100 p-2 btnclr text-white">Internship
-                    Portal</button></div>
-            <div class="col-3 text-center"><button type="button" class="btn w-100 p-2 btnclr text-white">Credit Transfer
-                    Guidelines</button></div>
+        <div class="row g-2 mb-4 justify-content-between">
+            <div class="col-md-4 p-3 text-start">
+                <aside class="shadow-sm p-3 mb-5 bg-body rounded">
+                    <div class="collapseheader">
+                        <h5 class="fw-bold mt-2" id="bscprogram" data-bs-toggle="collapse" data-bs-target="#bscprogramList"
+                            aria-expanded="true" aria-controls="programList">B.Sc Programs <i
+                                class="fa-solid fa-circle-chevron-down"></i></h5>
+                    </div>
+                    <ul class="list-unstyled text-decoration-none collapse show my-3" id="bscprogramList">
+                        <li  id="computer" ><a href="" class="text-decoration-none text-dark" role="button"><i class="fa-solid fa-angles-right"></i>
+                                Computer Science & Engineering</a></li>
+                        <li id="robotics" ><a href="" class="text-decoration-none text-dark" role="button"><i class="fa-solid fa-angles-right"></i>
+                                Robotics and Mechatronics Engineering</a>
+                        </li>
+                        <li id="nuclear"><a href="" class="text-decoration-none text-dark" role="button"><i class="fa-solid fa-angles-right"></i>
+                                Nuclear Engineering</a></li>
+                        <li  id="eee" ><a href="" class="text-decoration-none text-dark" role="button"><i class="fa-solid fa-angles-right"></i>
+                                Electrical and Electronic Engineering</a>
+                        </li>
+                    </ul>
+                </aside>
+                <aside class="shadow-sm p-3 mb-5 bg-body rounded">
+                    <div class="collapseheader">
+                        <h5 class="fw-bold mt-2" id="mscprogram" data-bs-toggle="collapse"
+                            data-bs-target="#mscprogramList" aria-expanded="true" aria-controls="mscprogramList">M.Sc
+                            Programs <i class="fa-solid fa-circle-chevron-down"></i></h5>
+                    </div>
+                    <ul class="list-unstyled text-decoration-none collapse my-3" id="mscprogramList">
+                        <li><a href="" class="text-decoration-none text-dark"><i class="fa-solid fa-angles-right"></i>
+                                Computer Science & Engineering</a></li>
+                        <li><a href="" class="text-decoration-none text-dark"><i class="fa-solid fa-angles-right"></i>
+                                Robotics and Mechatronics Engineering</a>
+                        </li>
+                        <li><a href="" class="text-decoration-none text-dark"><i class="fa-solid fa-angles-right"></i>
+                                Nuclear Engineering</a></li>
+                        <li><a href="" class="text-decoration-none text-dark"><i class="fa-solid fa-angles-right"></i>
+                                Electrical and Electronic Engineering</a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <!-- computer science  -->
+            <div id="computerdiv" name="computer" class="col-md-8 ps-5 mt-4">
+                <h2>B.Sc in Computer Science & Engineering</h2>
+                <div class="shadow-sm p-3 mb-5 bg-body rounded hstack gap-3">
+                    <div>
+                        <p class="fw-bold m-0">Faculty</p>
+                        <p>Engineering & Technology</p>
+                    </div>
+                    <div class="vr"></div>
+                    <div>
+                        <p class="fw-bold m-0">Duration</p>
+                        <p><i class="fa-regular fa-clock text-warning"></i> 4 Years</p>
+                    </div>
+                </div>
+                <div class="hstack btn-group">
+                    <button class="btn btn-outline-success active" type="button" name="overview">OVERVIEW</button>
+                    <button class="btn btn-outline-success" type="button" name="course">CURRICULUM & COURSE</button>
+                    <button class="btn btn-outline-success" type="button" name="syllabus">ALL SYLLABUS</button>
+                </div>
+                <!-- overview  -->
+                <div id="computeroverviewdiv" class="mt-4">
+                    <h6 class="fw-bold">Program Description</h6>
+                    <h3>Program: BSc (Honours) In Computer Science and Engineering</h3>
+                    <hr>
+                    <div class="col-sm-12">
+                        <p class="text-muted"><span class="fw-bold">Admission:</span> Students will be admitted to the
+                            department as per university rules.</p>
+                        <p class="text-muted"><span class="fw-bold">Duration of the Program:</span> 4 years.</p>
+                        <p class="text-muted"><span class="fw-bold">Total Semesters:</span> 4 X 2 = 8 (2 semesters a
+                            year of 22 weeks each).</p>
+                        <p class="text-muted"><span class="fw-bold">Total Number of Credits in 8 semesters (4
+                                years):</span> 160.0.</p>
+                        <p class="text-muted"><span class="fw-bold">Breakdown of each semester (of 22 weeks
+                                each):</span> <br> <u>Classes:</u> 15 active weeks (1 day of each week must be reserved
+                            for makeup classes. If necessary, weekends can be used for makeup classes and
+                            extra/additional classes may be taken within the semester schedule to finish the course).
+                            <br>
+                            <u>Break/PL:</u> 2 weeks. No separate break for in-course examinations. <br>
+                            <u>Semester Final Examinations:</u> 2 weeks. <br>
+                            <u>Evaluation of Scripts and Publication of Results:</u> 3 weeks (2 weeks for grade
+                            submission and 1 week for tabulation and result publication). <br>
+                            <u>Vacations:</u> No separate semester break. Only the usual university vacations apply.
+                        </p>
+                        <p class="text-muted"><span class="fw-bold">Teaching of the courses:</span> <br>For each credit
+                            of a theory course, there will be 1 class per week of 1 hour duration. <br>
+                            Total classes in a semester for each credit of a theory course will be 15 (15 X 1). <br>
+                            Total Contact Hours in a semester for each 1.0 credit theory course: 15 X 1 = 15. <br>
+                            For each 1.0 credit lab course, there will be 1 class per week of 2 hours duration. <br>
+                            Total classes in a semester for each 1.0 credit lab course in 15 weeks: 15 X 1 = 15. <br>
+                            Total Contact Hours in a semester for each 1.0 credit lab course: 15 X 2 = 30.</p>
+                    </div>
+                </div>
+                <!-- course  -->
+                <div id="computercoursediv" class="displaynone mt-4">
+                    <h5>List of Courses(Year/Semester)</h5>
+                    <p class="text-muted">Data not Available</p>
+                </div>
+                <!-- syllabus -->
+                <div id="computersyllabusdiv" class="displaynone mt-4">
+                    <h5 class="fw-bold">List of Syllabus</h5>
+                    <div class="hstack gap-3 shadow-sm p-3 mb-5 bg-body rounded">
+                        <a class="text-dark" href=""> > B.Sc in Computer Science & Engineering</a>
+                        <p class="m-0">(Year:2019-2020)</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Robotics science  -->
+            <div id="roboticsdiv"  name="robotics" class="col-md-8 ps-5 mt-4 d-none">
+                <h2>B.Sc in Robotics and Mechatronics Engineering</h2>
+                <div class="shadow-sm p-3 mb-5 bg-body rounded hstack gap-3">
+                    <div>
+                        <p class="fw-bold m-0">Faculty</p>
+                        <p>Engineering & Technology</p>
+                    </div>
+                    <div class="vr"></div>
+                    <div>
+                        <p class="fw-bold m-0">Duration</p>
+                        <p><i class="fa-regular fa-clock text-warning"></i> 4 Years</p>
+                    </div>
+                </div>
+                <div class="hstack btn-group">
+                    <button class="btn btn-outline-success active" type="button" name="overview">OVERVIEW</button>
+                    <button class="btn btn-outline-success" type="button" name="course">CURRICULUM & COURSE</button>
+                    <button class="btn btn-outline-success" type="button" name="syllabus">ALL SYLLABUS</button>
+                </div>
+                <!-- overview  -->
+                <div id="roboticsoverviewdiv" class="mt-4 ">
+                    <h6 class="fw-bold">Program Description</h6>
+                    <h3>Program: BSc (Honours) In Robotics and Mechatronics Engineering</h3>
+                    <hr>
+                    <div class="col-sm-12">
+                        <p class="text-muted"><span class="fw-bold">Admission:</span> Students will be admitted to the
+                            department as per university rules.</p>
+                        <p class="text-muted"><span class="fw-bold">Duration of the Program:</span> 4 years.</p>
+                        <p class="text-muted"><span class="fw-bold">Total Semesters:</span> 4 X 2 = 8 (2 semesters a
+                            year of 22 weeks each).</p>
+                        <p class="text-muted"><span class="fw-bold">Total Number of Credits in 8 semesters (4
+                                years):</span> 160.0.</p>
+                        <p class="text-muted"><span class="fw-bold">Breakdown of each semester (of 22 weeks
+                                each):</span> <br> <u>Classes:</u> 15 active weeks (1 day of each week must be reserved
+                            for makeup classes. If necessary, weekends can be used for makeup classes and
+                            extra/additional classes may be taken within the semester schedule to finish the course).
+                            <br>
+                            <u>Break/PL:</u> 2 weeks. No separate break for in-course examinations. <br>
+                            <u>Semester Final Examinations:</u> 2 weeks. <br>
+                            <u>Evaluation of Scripts and Publication of Results:</u> 3 weeks (2 weeks for grade
+                            submission and 1 week for tabulation and result publication). <br>
+                            <u>Vacations:</u> No separate semester break. Only the usual university vacations apply.
+                        </p>
+                        <p class="text-muted"><span class="fw-bold">Teaching of the courses:</span> <br>For each credit
+                            of a theory course, there will be 1 class per week of 1 hour duration. <br>
+                            Total classes in a semester for each credit of a theory course will be 15 (15 X 1). <br>
+                            Total Contact Hours in a semester for each 1.0 credit theory course: 15 X 1 = 15. <br>
+                            For each 1.0 credit lab course, there will be 1 class per week of 2 hours duration. <br>
+                            Total classes in a semester for each 1.0 credit lab course in 15 weeks: 15 X 1 = 15. <br>
+                            Total Contact Hours in a semester for each 1.0 credit lab course: 15 X 2 = 30.</p>
+                    </div>
+                </div>
+                <!-- course  -->
+                <div id="roboticscoursediv" class="displaynone mt-4">
+                    <h5>List of Courses(Year/Semester)</h5>
+                    <p class="text-muted">Data not Available</p>
+                </div>
+                <!-- syllabus -->
+                <div id="roboticssyllabusdiv" class="displaynone mt-4">
+                    <h5 class="fw-bold">List of Syllabus</h5>
+                    <div class="hstack gap-3 shadow-sm p-3 mb-5 bg-body rounded">
+                        <a class="text-dark" href=""> > B.Sc in Computer Science & Engineering</a>
+                        <p class="m-0">(Year:2019-2020)</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- nuclear science  -->
+            <div id="nucleardiv"  name="nuclear"  class="col-md-8 ps-5 mt-4 d-none">
+                <h2>B.Sc in Nuclear Engineering</h2>
+                <div class="shadow-sm p-3 mb-5 bg-body rounded hstack gap-3">
+                    <div>
+                        <p class="fw-bold m-0">Faculty</p>
+                        <p>Engineering & Technology</p>
+                    </div>
+                    <div class="vr"></div>
+                    <div>
+                        <p class="fw-bold m-0">Duration</p>
+                        <p><i class="fa-regular fa-clock text-warning"></i> 4 Years</p>
+                    </div>
+                </div>
+                <div class="hstack btn-group">
+                    <button class="btn btn-outline-success active" type="button" name="overview">OVERVIEW</button>
+                    <button class="btn btn-outline-success" type="button" name="course">CURRICULUM & COURSE</button>
+                    <button class="btn btn-outline-success" type="button" name="syllabus">ALL SYLLABUS</button>
+                </div>
+                <!-- overview  -->
+                <div id="nuclearoverviewdiv" class="mt-4 ">
+                    <h6 class="fw-bold">Program Description</h6>
+                    <h3>Program: BSc (Honours) In Nuclear Engineering</h3>
+                    <hr>
+                    <div class="col-sm-12">
+                        <p class="text-muted"><span class="fw-bold">Admission:</span> Students will be admitted to the
+                            department as per university rules.</p>
+                        <p class="text-muted"><span class="fw-bold">Duration of the Program:</span> 4 years.</p>
+                        <p class="text-muted"><span class="fw-bold">Total Semesters:</span> 4 X 2 = 8 (2 semesters a
+                            year of 22 weeks each).</p>
+                        <p class="text-muted"><span class="fw-bold">Total Number of Credits in 8 semesters (4
+                                years):</span> 160.0.</p>
+                        <p class="text-muted"><span class="fw-bold">Breakdown of each semester (of 22 weeks
+                                each):</span> <br> <u>Classes:</u> 15 active weeks (1 day of each week must be reserved
+                            for makeup classes. If necessary, weekends can be used for makeup classes and
+                            extra/additional classes may be taken within the semester schedule to finish the course).
+                            <br>
+                            <u>Break/PL:</u> 2 weeks. No separate break for in-course examinations. <br>
+                            <u>Semester Final Examinations:</u> 2 weeks. <br>
+                            <u>Evaluation of Scripts and Publication of Results:</u> 3 weeks (2 weeks for grade
+                            submission and 1 week for tabulation and result publication). <br>
+                            <u>Vacations:</u> No separate semester break. Only the usual university vacations apply.
+                        </p>
+                        <p class="text-muted"><span class="fw-bold">Teaching of the courses:</span> <br>For each credit
+                            of a theory course, there will be 1 class per week of 1 hour duration. <br>
+                            Total classes in a semester for each credit of a theory course will be 15 (15 X 1). <br>
+                            Total Contact Hours in a semester for each 1.0 credit theory course: 15 X 1 = 15. <br>
+                            For each 1.0 credit lab course, there will be 1 class per week of 2 hours duration. <br>
+                            Total classes in a semester for each 1.0 credit lab course in 15 weeks: 15 X 1 = 15. <br>
+                            Total Contact Hours in a semester for each 1.0 credit lab course: 15 X 2 = 30.</p>
+                    </div>
+                </div>
+                <!-- course  -->
+                <div id="nuclearcoursediv" class="displaynone mt-4">
+                    <h5>List of Courses(Year/Semester)</h5>
+                    <p class="text-muted">Data not Available</p>
+                </div>
+                <!-- syllabus -->
+                <div id="nuclearsyllabusdiv" class="displaynone mt-4">
+                    <h5 class="fw-bold">List of Syllabus</h5>
+                    <div class="hstack gap-3 shadow-sm p-3 mb-5 bg-body rounded">
+                        <a class="text-dark" href=""> > B.Sc in Computer Science & Engineering</a>
+                        <p class="m-0">(Year:2019-2020)</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- eee science  -->
+            <div id="eeediv" name="eee" class="col-md-8 ps-5 mt-4 d-none">
+                <h2>B.Sc in Electrical and Electronic Engineering</h2>
+                <div class="shadow-sm p-3 mb-5 bg-body rounded hstack gap-3">
+                    <div>
+                        <p class="fw-bold m-0">Faculty</p>
+                        <p>Engineering & Technology</p>
+                    </div>
+                    <div class="vr"></div>
+                    <div>
+                        <p class="fw-bold m-0">Duration</p>
+                        <p><i class="fa-regular fa-clock text-warning"></i> 4 Years</p>
+                    </div>
+                </div>
+                <div class="hstack btn-group">
+                    <button class="btn btn-outline-success active" type="button" name="overview">OVERVIEW</button>
+                    <button class="btn btn-outline-success" type="button" name="course">CURRICULUM & COURSE</button>
+                    <button class="btn btn-outline-success" type="button" name="syllabus">ALL SYLLABUS</button>
+                </div>
+                <!-- overview  -->
+                <div id="eeeoverviewdiv" class="mt-4 ">
+                    <h6 class="fw-bold">Program Description</h6>
+                    <h3>Program: BSc (Honours) In Electrical and Electronic Engineering</h3>
+                    <hr>
+                    <div class="col-sm-12">
+                        <p class="text-muted"><span class="fw-bold">Admission:</span> Students will be admitted to the
+                            department as per university rules.</p>
+                        <p class="text-muted"><span class="fw-bold">Duration of the Program:</span> 4 years.</p>
+                        <p class="text-muted"><span class="fw-bold">Total Semesters:</span> 4 X 2 = 8 (2 semesters a
+                            year of 22 weeks each).</p>
+                        <p class="text-muted"><span class="fw-bold">Total Number of Credits in 8 semesters (4
+                                years):</span> 160.0.</p>
+                        <p class="text-muted"><span class="fw-bold">Breakdown of each semester (of 22 weeks
+                                each):</span> <br> <u>Classes:</u> 15 active weeks (1 day of each week must be reserved
+                            for makeup classes. If necessary, weekends can be used for makeup classes and
+                            extra/additional classes may be taken within the semester schedule to finish the course).
+                            <br>
+                            <u>Break/PL:</u> 2 weeks. No separate break for in-course examinations. <br>
+                            <u>Semester Final Examinations:</u> 2 weeks. <br>
+                            <u>Evaluation of Scripts and Publication of Results:</u> 3 weeks (2 weeks for grade
+                            submission and 1 week for tabulation and result publication). <br>
+                            <u>Vacations:</u> No separate semester break. Only the usual university vacations apply.
+                        </p>
+                        <p class="text-muted"><span class="fw-bold">Teaching of the courses:</span> <br>For each credit
+                            of a theory course, there will be 1 class per week of 1 hour duration. <br>
+                            Total classes in a semester for each credit of a theory course will be 15 (15 X 1). <br>
+                            Total Contact Hours in a semester for each 1.0 credit theory course: 15 X 1 = 15. <br>
+                            For each 1.0 credit lab course, there will be 1 class per week of 2 hours duration. <br>
+                            Total classes in a semester for each 1.0 credit lab course in 15 weeks: 15 X 1 = 15. <br>
+                            Total Contact Hours in a semester for each 1.0 credit lab course: 15 X 2 = 30.</p>
+                    </div>
+                </div>
+                <!-- course  -->
+                <div id="eeecoursediv" class="displaynone mt-4">
+                    <h5>List of Courses(Year/Semester)</h5>
+                    <p class="text-muted">Data not Available</p>
+                </div>
+                <!-- syllabus -->
+                <div id="eeesyllabusdiv" class="displaynone mt-4">
+                    <h5 class="fw-bold">List of Syllabus</h5>
+                    <div class="hstack gap-3 shadow-sm p-3 mb-5 bg-body rounded">
+                        <a class="text-dark" href=""> > B.Sc in Computer Science & Engineering</a>
+                        <p class="m-0">(Year:2019-2020)</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
         <div class="my-3">
             <button type="button" class="btn btn-sm text-light rounded" id="fb"><small><i
@@ -395,6 +683,7 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    <script src="app.js"></script>
 </body>
 
 </html>
